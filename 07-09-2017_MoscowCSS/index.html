@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Пишем игры без JavaScript</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+
+	<style>
+		.slide.video {
+			padding-top: 0;
+			text-align: center;
+		}
+
+		img.responsive {
+			width: 100%;
+			height: auto;
+		}
+
+		.flexbox {
+			display: flex;
+		}
+	</style>
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Пишем игры без&nbsp;JavaScript</h1>
+		<p>Леонид Лебедев</p>
+	</header>
+
+	<section class="slide">
+		<h2 class="shout">Пишем игры без&nbsp;JavaScript</h2>
+	</section>
+
+	<section class="slide" id="about-me">
+		<h2>О&nbsp;себе</h2>
+		<div class="columns">
+			<div class="column-left">
+				<img src="pictures/me.jpg" alt="Леонид Лебедев">
+			</div>
+			<div class="column-right">
+				<ul>
+					<li>Frontend-разработчик в&nbsp;<a href="https://www.tutu.ru">Туту.ру</a></li>
+					<li>Наставник в&nbsp;<a href="https://htmlacademy.ru">HTML Academy</a></li>
+				</ul>
+			</div>
+		</div>
+		<style>
+			#about-me .column-left {
+				display: inline-block;
+				vertical-align: top;
+				width: 40%;
+			}
+			#about-me .column-left img {
+				width: 100%;
+				height: auto;
+			}
+			#about-me .column-right {
+				display: inline-block;
+				vertical-align: top;
+				width: 55%;
+				margin-left: 4%;
+			}
+			#about-me .column-right li {
+				text-indent: 0;
+			}
+			#about-me .column-right li::before {
+				display: none;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="about-company">
+		<h2>О&nbsp;компании Туту.ру</h2>
+		<img src="pictures/tutu.svg" alt="Туту.ру">
+		<p>Мы&nbsp;продаём ж/д, авиа и&nbsp;автобусные билеты, туры, бронируем отели, рассказываем о&nbsp;расписании.</p>
+		<p>Самый посещаемый сервис туристических услуг в&nbsp;России <a href="https://www.kommersant.ru/doc/2684166">(по&nbsp;версии comScore)</a>.</p>
+		<table>
+			<tr>
+				<td><b>1&nbsp;млн.</b></td>
+				<td><b>15&nbsp;млн.</b></td>
+				<td><b>2003&nbsp;г.</b></td>
+				<td><b>316</b></td>
+			</tr>
+			<tr>
+				<td>посетителей в&nbsp;день</td>
+				<td>посетителей в&nbsp;месяц</td>
+				<td>год основания</td>
+				<td>сотрудников</td>
+			</tr>
+		</table>
+		<a href="https://company.tutu.ru/">Подробнее о компании</a>
+		<style>
+			#about-company h2 {
+				display: none;
+			}
+			#about-company img {
+				width: 250px;
+			}
+			#about-company table td {
+				background: none !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Пишем игры без&nbsp;JavaScript</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Зачем?</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Зачем?</h2>
+		<ol>
+			<li>Хочу</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Зачем?</h2>
+		<ol>
+			<li>Хочу</li>
+			<li>Могу (наверное)</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Зачем?</h2>
+		<ol>
+			<li>Хочу</li>
+			<li>Могу (наверное)</li>
+			<li>4 fun</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+			<li>CSS animations</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+			<li>CSS animations</li>
+			<li>~</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+			<li>CSS animations</li>
+			<li>~</li>
+			<li>flexbox (grid)</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+			<li>CSS animations</li>
+			<li>~</li>
+			<li>flexbox (grid)</li>
+			<li>CSS Variables</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Как?</h2>
+		<ol>
+			<li>:hover</li>
+			<li>cursor</li>
+			<li>CSS animations</li>
+			<li>~</li>
+			<li>flexbox (grid)</li>
+			<li>CSS Variables</li>
+			<li>input + label (:checked)</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Ограничения</h2>
+		<p>Делаем только для современных браузеров</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Давайте сделаем!</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Race</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+		<ul>
+			<li>Машина будет управляться мышкой</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+		<ul>
+			<li>Машина будет управляться мышкой</li>
+			<li>В игре будут препятствия</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+		<ul>
+			<li>Машина будет управляться мышкой</li>
+			<li>В&nbsp;игре будут препятствия</li>
+			<li>Игра не&nbsp;должна быть бесконечной, есть способы победить</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Цель</h2>
+		<p>Сходу тяжело придумать, отложим на&nbsp;потом</p>
+	</section>
+
+	<section class="slide">
+		<h2>Курсор</h2>
+		<p>Можно повесить свою картинку на&nbsp;курсор</p>
+		<code>cursor: url('cursor.png'), default;</code>
+		<p><code>default</code> &mdash;&nbsp;вид курсора по&nbsp;умолчанию для текущего элемента</p>
+		<img src="pictures/cursor.png" alt="Машина">
+		<p>Ограничения: не&nbsp;более 128&times;128</p>
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/01_cursor.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Объекты</h2>
+		<p>Создаём препятствия для машины</p>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/02_hover.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Проблема с&nbsp;курсором</h2>
+		<p>Оказывается, что курсор&nbsp;&mdash; это точка</p>
+		<code>cursor: url('cursor.png') X Y, default;</code>
+		<div>
+			<code>X, Y</code><span> по&nbsp;умолчанию в&nbsp;верхней левой точке</span>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Проблема с&nbsp;курсором</h2>
+		<p>Оказывается, что курсор&nbsp;&mdash; это точка</p>
+		<code>cursor: url('cursor.png') <mark>X Y</mark>, default;</code>
+		<div>
+			<code>X, Y</code><span> по&nbsp;умолчанию в&nbsp;верхней левой точке</span>
+		</div>
+		<p><i>Решение:</i></p>
+		<ul>
+			<li>X Y ставим в&nbsp;верхнюю центральную часть курсора</li>
+			<li>Объекты увеличиваем на&nbsp;ширину и&nbsp;высоту курсора</li>
+		</ul>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/03_hover.mov">
+		</video>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/04_hover_problem.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Наведение на&nbsp;объект</h2>
+		<p>Объект имеет прямоугольную область, а&nbsp;визуально&nbsp;&mdash; сложную</p>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/05_hover_solution.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Добавляем скорости</h2>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/06_animation.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Добавляем скорости</h2>
+		<pre>
+			<code>@keyframes game-car {</code>
+			<code>	0% {</code>
+			<code>		transform: translateY(0);</code>
+			<code>	}</code>
+			<code>	100% {</code>
+			<code>		transform: translateY(calc(100vh + 200px));</code>
+			<code>		/* 200px &mdash;&nbsp;высота объекта */</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Добавляем скорости</h2>
+		<pre>
+			<code>body:hover .car-1 {</code>
+			<code>	animation: game-car 5s linear infinite;</code>
+			<code>}</code>
+		</pre>
+		<div>
+			<code>game-car</code>&nbsp;&mdash; название (<code>animation-name</code>)
+		</div>
+		<div>
+			<code>5s</code>&nbsp;&mdash; продолжительность (<code>animation-duration</code>)
+		</div>
+		<div>
+			<code>linear</code>&nbsp;&mdash; функция времени (<code>animation-timing-function</code>)
+		</div>
+		<div>
+			<code>infinite</code>&nbsp;&mdash; количество (<code>animation-iteration-count</code>)
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Добавляем скорости</h2>
+		<pre>
+			<code>body:hover .car-1 {</code>
+			<code>	animation: game-car 5s linear infinite;</code>
+			<code>}</code>
+		</pre>
+		<pre>
+			<code>body:hover .car-2 {</code>
+			<code>	animation: game-car 4s infinite linear;</code>
+			<code>}</code>
+		</pre>
+		<div>и т.д.</div>
+	</section>
+
+	<section class="slide">
+		<h2>Экраны</h2>
+		<p>Изначально экран не&nbsp;видно, показывается только при наведении на&nbsp;машину</p>
+		<pre>
+			<code>.car:hover ~ .screen-lose {</code>
+			<code>	display: block;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/07_screen_lose.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Экраны</h2>
+		<p>Можно скрыть только убрав с&nbsp;него курсор</p>
+		<pre>
+			<code>.screen-lose {</code>
+			<code>	display: none;</code>
+			<code>	z-index: 999999;</code>
+			<code>}</code>
+			<code>.screen-lose:hover {</code>
+			<code>	display: block;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<p>При поражении пользователь уводит курсор и&nbsp;начинает играть сначала</p>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<p>При поражении пользователь уводит курсор и&nbsp;начинает играть сначала</p>
+		<p><i>Как сделать рандомность?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<pre>
+			<code>body:hover .car-1 {</code>
+			<code>	<span style="text-decoration: line-through">animation: game-car 4s 1s infinite linear;</span></code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<pre>
+			<code>body:hover .car-1 {</code>
+			<code>	animation-play-state: running;</code>
+			<code>}</code>
+			<code>.car-1 {</code>
+			<code>	animation: game-car 4s infinite linear;</code>
+			<code>	animation-play-state: paused;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide video">
+		<video controls loop>
+			<source src="pictures/video/08_random.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Дизайнер</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Дизайнер</h2>
+		<ul>
+			<li>подсказал идею</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Дизайнер</h2>
+		<ul>
+			<li>подсказал идею</li>
+			<li>нарисовал полосы</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Дизайнер</h2>
+		<ul>
+			<li>подсказал идею</li>
+			<li>нарисовал полосы</li>
+			<li>подготовил машинки</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Дизайнер</h2>
+		<ul>
+			<li>подсказал идею</li>
+			<li>нарисовал полосы</li>
+			<li>подготовил машинки</li>
+			<li>🔥</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Цель</h2>
+		<p>Необходимо оторваться от&nbsp;полиции и&nbsp;заехать в&nbsp;грузовик</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Демо</h2>
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/09_game.mov">
+		</video>
+	</section>
+
+	<section class="slide" id="race-screen">
+		<img class="responsive" src="pictures/race_screen.png" alt="Скриншот игры">
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/10_game_lose.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<p><i>Как усложнить или упростить игру?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<p><i>Как усложнить или упростить игру?</i></p>
+		<p>Изначально делаем игру на&nbsp;относительных величинах!</p>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<p><i>Как усложнить или упростить игру?</i></p>
+		<p>Изначально делаем игру на&nbsp;относительных величинах!</p>
+		<p>Способы:</p>
+		<ul>
+			<li>увеличивать/уменьшать по&nbsp;высоте окно браузера</li>
+			<li>увеличивать/уменьшать масштаб страницы<i>*</i></li>
+		</ul>
+		<p><i>* &mdash; криво будут вычисляться столкновения</i></p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Победа</h2>
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/11_win.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<img class="responsive" src="pictures/money.jpeg" alt="Деньги">
+	</section>
+
+	<section class="slide">
+		<img class="responsive" src="pictures/mobile_mem.png" alt="А как же мобильные телефоны?">
+	</section>
+
+	<section class="slide">
+		<h2>2017️</h2>
+		<p>Люди всё реже пользуются компьютером, и&nbsp;всё чаще чаще мобильным телефоном</p>
+	</section>
+
+	<section class="slide">
+		<h2>2017️</h2>
+		<p>Люди всё реже пользуются компьютером, и&nbsp;всё чаще чаще мобильным телефоном</p>
+		<p><i>Как быть?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>2017️</h2>
+		<p>Люди всё реже пользуются компьютером, и&nbsp;всё чаще чаще мобильным телефоном</p>
+		<p><i>Как быть?</i></p>
+		<p><code>:hover</code> уже не&nbsp;работает</p>
+		<p><b>Выхода нет! (с)</b></p>
+	</section>
+
+	<section class="slide">
+		<h2>Игра под&nbsp;мобильные устройства️</h2>
+		<p>Будем использовать <code>label</code>, <code>input</code>, <code>:checked</code></p>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+		<ul>
+			<li>Клик по&nbsp;чему-то приводит к&nbsp;изменению состояния</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Концепция</h2>
+		<ul>
+			<li>Клик по&nbsp;чему-то приводит к&nbsp;изменению состояния чего-то</li>
+			<li>Игра не&nbsp;должна быть бесконечной, есть способы победить</li>
+		</ul>
+	</section><section class="slide">
+		<h2>Whac-A-Mole</h2>
+		<img style="height: 100%;" src="pictures/whac-a-mole.jpg" alt="Whac-A-Mole">
+	</section>
+
+	<section class="slide">
+		<h2>Catch-A-Mole</h2>
+		<p>Цель игры: словить всех кротов за&nbsp;отведённое время</p>
+	</section>
+
+	<section class="slide demo-hole">
+		<h2>Лунки</h2>
+		<div class="hole">
+			<div class="hole__up"></div>
+			<input type="radio" name="mole1" id="mole1">
+			<label class="mole mole--1" for="mole1"></label>
+			<div class="hole__down"></div>
+		</div>
+		<p>По&nbsp;клику крот исчезает</p>
+		<style>
+			.demo-hole input {
+				display: none;
+			}
+
+			input:checked + label {
+				display: none;
+			}
+
+			.hole {
+				position: relative;
+				width: 150px;
+				height: 120px;
+				padding-top: 40px;
+				overflow: hidden;
+			}
+			.hole__up {
+				height: 70px;
+				width: 100%;
+				background-image: url('pictures/hole-up.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+			.hole__down {
+				position: relative;
+				z-index: 1;
+				height: 40px;
+				width: 100%;
+				margin-top: -25px;
+				background-image: url('pictures/hole-down.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+			.mole {
+				position: absolute;
+				top: 100%;
+				display: block;
+				width: 100px;
+				height: 100px;
+				margin-left: 23px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.mole--1 {
+				background-image: url('pictures/mole.png');
+				top: 20%;
+				animation: mole-def 3s linear backwards infinite;
+			}
+			@keyframes mole-def {
+				0% {
+					transform: translateY(100px);
+				}
+				10% {
+					transform: translateY(-20px);
+				}
+				20% {
+					transform: translateY(10px);
+				}
+				30% {
+					transform: translateY(100px);
+				}
+				100% {
+					transform: translateY(100px);
+				}
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Лунки</h2>
+		<pre>
+			<code>&lt;div class="hole"&gt;</code>
+			<code>	&lt;div class="hole__up"&gt;&lt;/div&gt;</code>
+			<code>	&lt;input type="radio" name="mole1"&gt;</code>
+			<code>	&lt;label class="mole mole--1" for="mole1"&gt;&lt;/label&gt;</code>
+			<code>	&lt;div class="hole__down"&gt;&lt;/div&gt;</code>
+			<code>&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Игровое поле</h2>
+		<img src="pictures/moles.png" alt="Кроты">
+	</section>
+
+	<section class="slide">
+		<h2>Таймер</h2>
+		<div class="timer">
+			<div class="timer__progress"></div>
+		</div>
+		<p>Отсчитываем время до&nbsp;конца игры</p>
+		<style>
+			.timer {
+				position: relative;
+				overflow: hidden;
+				height: 20px;
+				border-radius: 20px;
+			}
+			.timer__progress {
+				height: 100%;
+				transform: translate(0);
+				background-color: darkred;
+				box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+				animation-fill-mode: forwards;
+				animation-iteration-count: 1;
+				animation-timing-function: linear;
+			}
+			.timer__progress::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+				z-index: 1;
+				background-size: 50px 50px;
+				animation: move 2s linear infinite;
+				overflow: hidden;
+			}
+			@keyframes move {
+				0% {
+					background-position: 50px 50px;
+				}
+				100% {
+					background-position: 0 0;
+				}
+			}
+			@keyframes translate {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(-100%);
+				}
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Экраны</h2>
+		<div class="flexbox">
+			<img src="pictures/welcome.png" alt="Первый экран">
+			<img src="pictures/finish.png" alt="Экран окончания игры">
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Начало игры</h2>
+		<p>Клик по&nbsp;экрану запускает анимации</p>
+		<pre>
+			<code>&lt;body&gt;</code>
+			<code>	&lt;input type="checkbox" id="start"&gt;</code>
+			<code>	&lt;div class="screen screen--start"&gt;</code>
+			<code>		&lt;label for="start"&gt;Click!&lt;/label&gt;</code>
+			<code>	&lt;/div&gt;</code>
+			<code>&lt;/body&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Начало игры</h2>
+		<pre>
+			<code>.start:checked ~ .timer {</code>
+			<code>	animation-name: timer;</code>
+			<code>}</code>
+		</pre>
+		<pre>
+			<code>.start:checked ~ .screen--finish {</code>
+			<code>	animation-name: finish;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Конец игры</h2>
+		<p><i>Как начать снова, если уже сыграли и&nbsp;поймали несколько кротов?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Конец игры</h2>
+		<p><i>Как начать снова, если уже сыграли и&nbsp;поймали несколько кротов?</i></p>
+		<p>Перезапускаем страницу!</p>
+		<pre>
+			<code>&lt;a href=""&gt;&lt;/a&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<p><i>Как усложнить или упростить игру?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<p><i>Как усложнить или упростить игру?</i></p>
+		<p>При старте выбирать сложность!</p>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<pre>
+			<code>&lt;body&gt;</code>
+			<code>	&lt;input type="checkbox" id="start-easy"&gt;</code>
+			<code>	&lt;input type="checkbox" id="start-hard"&gt;</code>
+			<code>	&lt;div class="screen screen--start"&gt;</code>
+			<code>		&lt;label for="start-easy"&gt;Easy&lt;/label&gt;</code>
+			<code>		&lt;label for="start-hard"&gt;Hard&lt;/label&gt;</code>
+			<code>	&lt;/div&gt;</code>
+			<code>&lt;/body&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<pre>
+			<code>.start--easy:checked ~ .timer,</code>
+			<code>.start--easy:checked ~ .screen--finish {</code>
+			<code>	animation-duration: 15s;</code>
+			<code>}</code>
+		</pre>
+		<pre>
+			<code>.start--hard:checked ~ .timer,</code>
+			<code>.start--hard:checked ~ .screen--finish {</code>
+			<code>	animation-duration: 7s;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Уровни</h2>
+		<img src="pictures/levels.png" alt="Уровни">
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<p>Сейчас пользователь знает последовательность появления кротов, т.к. анимация запускает при выборе уровня</p>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<p>Сейчас пользователь знает последовательность появления кротов, т.к. анимация запускает при выборе уровня</p>
+		<p><i>Как решить проблему?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Рандомность</h2>
+		<p>Сейчас пользователь знает последовательность появления кротов, т.к. анимация запускает при выборе уровня</p>
+		<p><i>Как решить проблему?</i></p>
+		<p>Запускаем анимации кротов при загрузке страницы!</p>
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/wam_01.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Цель игры ловить кротов</p>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Цель игры ловить кротов, но&nbsp;<i>как посчитать количество пойманных?</i></p>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Цель игры ловить кротов, но&nbsp;<i>как посчитать количество пойманных?</i></p>
+		<p>Будем использовать <code>input</code>!</p>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Как работает <code>input</code> с&nbsp;типом <code>radio</code>?</p>
+		<img src="pictures/checked_1.png" alt="Выбран первый инпут">
+		<pre>
+			<code>&lt;input type="radio" name="name" checked&gt;</code>
+			<code>&lt;input type="radio" name="name"&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Как работает <code>input</code> с&nbsp;типом <code>radio</code>?</p>
+		<img src="pictures/checked_2.png" alt="Выбран второй инпут">
+		<pre>
+			<code>&lt;input type="radio" name="name"&gt;</code>
+			<code>&lt;input type="radio" name="name" checked&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<img src="pictures/checked_1.png" alt="Выбран первый инпут">
+		<pre>
+			<code>&lt;div&gt;</code>
+			<code>	&lt;input type="radio" name="name" checked&gt;</code>
+			<code>&lt;/div&gt;</code>
+			<code>&lt;div&gt;</code>
+			<code>	&lt;input type="radio" name="name"&gt;</code>
+			<code>&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<img src="pictures/checked_2.png" alt="Выбран второй инпут">
+		<pre>
+			<code>&lt;div&gt;</code>
+			<code>	&lt;input type="radio" name="name"&gt;</code>
+			<code>&lt;/div&gt;</code>
+			<code>&lt;div&gt;</code>
+			<code>	&lt;input type="radio" name="name" checked&gt;</code>
+			<code>&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Вспоминаем, как у&nbsp;нас устроен крот</p>
+		<pre>
+			<code>&lt;input type="radio" name="mole1"&gt;</code>
+			<code>&lt;label class="mole mole--1" for="mole1"&gt;&lt;/label&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<p>Вспоминаем, как у&nbsp;нас устроен крот</p>
+		<pre>
+			<code>&lt;input type="radio" name="mole1"&gt;</code>
+			<code>&lt;label class="mole mole--1" for="mole1"&gt;&lt;/label&gt;</code>
+		</pre>
+		<p>Значит можно сделать такой инпут</p>
+		<pre>
+			<code>&lt;input type="radio" name="mole1" checked&gt;</code>
+		</pre>
+		<p>Когда будет пойман крот, то&nbsp;у&nbsp;этого инпута пропадёт состояние <code>checked</code></p>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<img src="pictures/time.png" alt="Счётчик" style="filter: invert(100%)">
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<pre>
+			<code>&lt;input type="radio" name="mole1" checked&gt;</code>
+			<code>&lt;input type="radio" name="mole2" checked&gt;</code>
+			<code>&lt;input type="radio" name="mole3" checked&gt;</code>
+			<code>...</code>
+			<code>&lt;img src="scores.png" alt="scores"&gt;</code>
+		</pre>
+		<div class="score__wrapper">
+			<div class="score__wrapper-points">
+				<div class="score__points">00</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<pre>
+			<code>&lt;input type="radio" name="mole1"&gt;</code>
+			<code>&lt;input type="radio" name="mole2" checked&gt;</code>
+			<code>&lt;input type="radio" name="mole3" checked&gt;</code>
+			<code>...</code>
+			<code>&lt;img src="scores.png" alt="scores"&gt;</code>
+		</pre>
+		<div class="score__wrapper">
+			<div class="score__wrapper-points">
+				<div class="score__points">01</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Счётчик</h2>
+		<pre>
+			<code>&lt;input type="radio" name="mole1"&gt;</code>
+			<code>&lt;input type="radio" name="mole2"&gt;</code>
+			<code>&lt;input type="radio" name="mole3" checked&gt;</code>
+			<code>...</code>
+			<code>&lt;img src="scores.png" alt="scores"&gt;</code>
+		</pre>
+		<div class="score__wrapper">
+			<div class="score__wrapper-points">
+				<div class="score__points">02</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">Демо</h2>
+	</section>
+
+	<section class="slide video">
+		<video controls loop height="100%">
+			<source src="pictures/video/wam_02.mov">
+		</video>
+	</section>
+
+	<section class="slide">
+		<img class="responsive" src="pictures/money.jpeg" alt="Деньги">
+	</section>
+
+	<section class="slide">
+		<h2>Контакты</h2>
+		<div class="double">
+			<div>
+				<p>github: <a href="https://github.com/leonidlebedev">leonidlebedev</a></p>
+				<p>telegram: <a href="https://telegram.me/leonidlebedev">@leonidlebedev</a></p>
+				<p>twitter: <a href="https://twitter.com/leonid_lebedev">@leonid_lebedev</a></p>
+			</div>
+			<div>
+				<img src="pictures/qr-code.gif" alt="QR">
+			</div>
+		</div>
+	</section>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
